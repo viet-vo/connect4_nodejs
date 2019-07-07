@@ -1,0 +1,9 @@
+{
+  "name": "1connect4",
+  "version": "1.0.0",
+  "main": "connect4.js",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^6.4.1"
+  }
+}
