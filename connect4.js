@@ -24,7 +24,12 @@ class Game {
             [1, 1, 1, 0, 0, 0,],
         ];
     };
-
+    checkWinner() {
+        // Check down for winner
+        // relevant StackOverflow link 
+        // https://stackoverflow.com/questions/33181356/connect-four-game-checking-for-wins-js
+        
+    }
 };
 var game = new Game();
 
