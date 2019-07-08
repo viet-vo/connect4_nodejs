@@ -8,18 +8,25 @@ class Game {
     constructor() {
         // !This game board will be the production
         // this.board = {
-        //     1: Array(7).fill(null),
-        //     2: Array(7).fill(null),
-        //     3: Array(7).fill(null),
-        //     4: Array(7).fill(null),
-        //     5: Array(7).fill(null),
-        //     6: Array(7).fill(null),
-        //     7: Array(7).fill(null),
+        //     1: Array(6).fill(0),
+        //     2: Array(6).fill(0),
+        //     3: Array(6).fill(0),
+        //     4: Array(6).fill(0),
+        //     5: Array(6).fill(0),
+        //     6: Array(6).fill(0),
         // };
+        this.board = [
+            Array(6).fill(0),
+            Array(6).fill(0),
+            Array(6).fill(0),
+            Array(6).fill(0),
+            Array(6).fill(0),
+            [1, 1, 1, 0, 0, 0,],
+        ];
     };
 
 };
-const game = new Game();
+var game = new Game();
 
 inquirer
     .prompt([{
@@ -29,5 +36,6 @@ inquirer
         message: "Pick the column to drop piece",
     }])
     .then(choice => {
-        console.log(choice.columnChoice);
+        pickedColumn = choice.columnChoice;
+        console.log(game.board);
     })
