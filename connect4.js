@@ -28,7 +28,8 @@ class Game {
         // Check down for winner
         // relevant StackOverflow link 
         // https://stackoverflow.com/questions/33181356/connect-four-game-checking-for-wins-js
-    
+        // Check with a for loop over each particular position that 4 times
+        // Have to check in a format down, right, diagonally right, and diagonally left
     }
 };
 var game = new Game();
